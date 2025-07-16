@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор случайных фильмов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Случайный фильм</h1>
+    
+    <div id="movie-container">
+        <h2 id="title">Название фильма</h2>
+        <p id="overview">Описание фильма...</p>
+        <img id="poster" src="" alt="Постер фильма">
+    </div>
+
+    <div class="filters">
+        <label for="genre-select">Жанр:</label>
+        <select id="genre-select">
+            <option value="">Любой</option>
+            <option value="28">Боевик</option>
+            <option value="35">Комедия</option>
+            <option value="18">Драма</option>
+            <option value="27">Ужасы</option>
+            <option value="10749">Мелодрама</option>
+            <option value="16">Мультфильм</option>
+            <option value="12">Приключения</option>
+            <option value="878">Фантастика</option>
+        </select>
+
+        <label for="rating-select">Минимальный рейтинг:</label>
+        <select id="rating-select">
+            <option value="">Не важно</option>
+            <option value="8">8+</option>
+            <option value="7">7+</option>
+            <option value="6">6+</option>
+            <option value="5">5+</option>
+        </select>
+    </div>
+
+    <button id="generate-btn">Показать случайный фильм</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
